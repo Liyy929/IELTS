@@ -1,0 +1,25 @@
+# 敏感信息
+config.env
+.env
+
+# 生词数据（如果你不想公开自己的生词本）
+vocab_data.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+venv/
+
+# VS Code 配置
+.vscode/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 日志
+*.log

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "IELTS Vocab Catcher",
+  "version": "1.0",
+  "description": "捕获雅思阅读标亮单词并发送到本地服务",
+  "permissions": ["activeTab"],
+  "host_permissions": ["http://localhost:5000/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.xdf.cn/*", "https://*.koolearn.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
